@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masculino ou Feminino?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(222, 91, 25);
+            color: white;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }    
+        
+    </style>
+</head>
+<body>
+    <h1>Me diga que o seu gênero?</h1>
+    <script>
+        
+        let s = prompt('Informe o seu sexo (M ou F): ');
+    
+        if (s === 'M' || s == 'm') {
+        document.write('<p>Sexo</p> ' + s + ' <p>Masculino</>');
+            }else if (s === 'F' || s == 'f') {
+                document.write('<p>Sexo</p> ' + s + ' <p>Feminino</p>');
+            }else {
+            document.write('<p>Sexo</p> ' + s + ' <p>Invalido</p>');
+            }
+            
+    
+    </script>
+</body>
+</html>

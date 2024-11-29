@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O melhor Produto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(27, 105, 89);
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        for (var i = 0; i < 1   ; i++) {
+            let numero = Number(prompt("Digite o valor do produto 1: "));
+            let numero2 = Number(prompt("Digite o valor do produto 2: "));
+            let numero3 = Number(prompt("Digite o valor do produto 3: "));
+
+            let menor = Math.min(numero, numero2, numero3);
+            
+            document.write("O produto mais barato é: " + menor);
+        }
+
+    </script>
+</body>
+</html>

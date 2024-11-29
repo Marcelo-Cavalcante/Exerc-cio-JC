@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>É vogal ou Consoante?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(26, 121, 210);
+            color: white;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }    
+        
+    </style>
+</head>
+<body>
+    <h1>É Vogal ou Consoante?</h1>
+        <script>
+             let L = prompt('Informe um letra: ');
+             
+            if (['a', 'e', 'i', 'o', 'u'].includes(L)) {
+        document.write('<p>A letra é</p> ' + L + ' <p>Vogal</>');
+            }else {
+            document.write('<p>A letra é</p> ' + L + ' <p>Consoante</p>');
+            }
+        </script>
+</body>
+</html>

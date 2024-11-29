@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O maior e o menor número</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(6, 6, 6);
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>O maior e o menor número é:</h1>
+    <script>
+        for (var i = 0; i < 1   ; i++) {
+            let numero = Number(prompt("Digite um número: "));
+            let numero2 = Number(prompt("Digite mais um número: "));
+            let numero3 = Number(prompt("Digite outro número: "));
+
+            let maior = Math.max(numero, numero2, numero3);
+            let menor = Math.min(numero, numero2, numero3);
+            
+            document.write("O maior número é: " + maior + "<br> O menor número é: " + menor);
+        }
+
+    </script>
+</body>
+</html>

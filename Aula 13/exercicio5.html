@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do Aluno</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(84, 182, 4);
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Notas Escolares</h1>
+    <script>
+        for (let i = 0; i < 1; i++) {
+            let nome = prompt('Digite o nome do aluno: ');
+            let n1 = Number (prompt('Digite a primeira nota: '));
+            let n2 = Number (prompt('Digite a segunda nota: '));
+            let somaNotas = n1 + n2;
+            let media = somaNotas / 2 ;
+
+            if (media < 7) {
+                document.write('<p>Nome do Aluno: </p>' + nome + '<br>');
+                document.write('<p>Média das Notas: </p>' + media + '<br>');
+                document.write('<p>Conceito: </p> Reprovado<br>');
+            }else if (media >= 7 && media <= 9) {
+                document.write('<p>Nome do Aluno: </p>' + nome + '<br>');
+                document.write('<p>Média das Notas: </p>' + media + '<br>');
+                document.write('<p>Conceito: </p> Aprovado<br>');
+            }else {
+                document.write('<p>Nome do Aluno: </p>' + nome + '<br>');
+                document.write('<p>Média das Notas: </p>' + media + '<br>');
+                document.write('<p>Conceito: </p> Aprovado com Dinstição<br>');
+            }
+        }
+    </script>
+</body>
+</html>

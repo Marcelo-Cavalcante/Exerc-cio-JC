@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turno da tumar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(82, 79, 10);
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual o seu Turno?</h1>
+    <script>
+        for (let i = 0; i < 1; i++) {
+            let nome = prompt('Olá, qual o seu nome: ');
+            let turno = prompt('Digite qual turno você estuda? M (manhã), T (tarde), N (noite): ');
+
+        let m = 'M';
+        let t = 'T';
+        let n = 'N';
+
+          
+           
+           
+            if (turno == 'M' || turno == 'm') {                             
+                document.write('Olá, ' + nome + ' Bom dia!</p>');                
+            }else if (turno == 'T' || turno == 't') {
+                document.write('Olá,</p> ' + nome + ' Boa Tarde!</p>');
+            }else if (turno == 'N' || turno == 'n') {
+                document.write('Olá, ' + nome + ' Boa Noite!');               
+            }else {
+                alert('Turno inválido. Por favor, escolha entre M (manhã), T (tarde) ou N (noite).');
+                break;                                                
+            }
+        }
+
+           
+    </script>
+</body>
+</html>

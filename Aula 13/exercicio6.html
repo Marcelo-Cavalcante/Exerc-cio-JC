@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é o maior Número</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(33, 134, 227);
+            color: white;
+            text-align: center;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>O Maior Número</h1>
+    <script>
+        for (let i = 0; i < 1; i++) {
+            let n = Number(prompt("Digite um número: "));
+            let n2 = Number(prompt("Digite mais um número: "));
+            let n3 = Number(prompt("Digite outro número: "));
+            if (n < n2 && n2 < n3) {
+                document.write("O maior número é: " + n3);
+            } else if (n < n2 && n2 > n3) {
+                document.write("O maior número é: " + n2);
+            }else if (n > n2 && n2 > n3){
+                document.write("O maior número é: " + n);
+
+            } else {
+                document.write("Os números são iguais ou não possuem um maior valor.");
+            }
+        }
+    </script>
+</body>
+</html>

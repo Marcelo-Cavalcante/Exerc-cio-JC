@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(60, 162, 128);
+            color: white;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }    
+        
+    </style>
+</head>
+<body>
+    <h1>Me diga um número e eu te digo se é Negativo ou Positivo</h1>
+    <script>
+        for (let i = 0; i < 1; i++) {
+        let n1 = Number (prompt('Digite um número: '));
+        
+        if (n1 < 0){
+            document.write('<p>O número</p> '+ n1 + ' é Negativo');
+        }else {
+            document.write('<p>O número</p>' + n1 + ' <p>é Positive</p>');
+        }
+    }
+    </script>
+</body>
+</html>
